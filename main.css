@@ -1,0 +1,60 @@
+.clockWrapper{
+    width:450px;
+    height:450px;
+  }
+  .clockShape{
+    width:100%;
+    height:100%;
+    border-radius:200px;
+    position:relative;
+    background:url('clock.png');
+    background-size:100%;
+    background-position:center;
+  }
+  .clockArrWrapper{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:100%;
+  }
+  .second, .minute, .hour, .dotWrapper{
+    position:absolute;
+  }
+  .second{
+    margin-top:70px;
+    height:155px;
+    width:1%;
+    background:rgb(196, 28, 28);
+    transition:1s linear;
+  }
+  .minute{
+    margin-top:95px;
+    height:130px;
+    width:6px;
+    background:black;
+  }
+  .hour{
+    margin-top:145px;
+    height:80px;
+    width:8px;
+    background:black;
+  }
+  .dotWrapper{
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      width:100%;
+      height:100%;
+      z-index:1;
+  }
+  .dot{
+      width:10px;
+      height:10px;
+      border-radius:10px;
+      background:white;
+      border:3px solid black;
+  }
+  .clockSecWrapper, .clockMinWrapper, .clockHourWrapper{
+    transition:1s linear;
+  }
