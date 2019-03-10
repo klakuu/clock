@@ -1,6 +1,11 @@
+body{
+  margin:0;
+  padding:0;
+}
 .clockWrapper{
     width:450px;
     height:450px;
+    margin:0 auto;
   }
   .clockShape{
     width:100%;
@@ -10,6 +15,7 @@
     background:url('clock.png');
     background-size:100%;
     background-position:center;
+    background-repeat:no-repeat;
   }
   .clockArrWrapper{
     position:absolute;
@@ -26,7 +32,6 @@
     height:155px;
     width:1%;
     background:rgb(196, 28, 28);
-    transition:1s linear;
   }
   .minute{
     margin-top:95px;
@@ -56,5 +61,23 @@
       border:3px solid black;
   }
   .clockSecWrapper, .clockMinWrapper, .clockHourWrapper{
-    transition:1s linear;
+    /* transition:1s linear; */
+  }
+  @media screen and (max-width:600px){
+    .clockWrapper{
+      width:350px;
+      height:350px;
+    }
+    .second{
+      margin-top:60px;
+      height:115px;
+    }
+    .minute{
+      margin-top:80px;
+      height:95px;
+    }
+    .hour{
+      margin-top:100px;
+      height:75px;
+    }
   }
