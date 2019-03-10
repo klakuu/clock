@@ -63,7 +63,7 @@ body{
   .clockSecWrapper, .clockMinWrapper, .clockHourWrapper{
     /* transition:1s linear; */
   }
-  @media screen and (max-width:600px){
+  @media screen and (max-width:500px){
     .clockWrapper{
       width:350px;
       height:350px;
